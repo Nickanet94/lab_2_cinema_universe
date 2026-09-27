@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe/"
+     xml:base="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#actedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#actedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasActor1"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:comment>Актер снимался в фильме</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#directed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#directed">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasDirector"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:comment>Режиссер снял фильм</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasActor">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasActor1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasActor1">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor"/>
+        <rdfs:comment>У Фильма есть актер</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasDirector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director"/>
+        <rdfs:comment>У Фильма есть режиссер</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+        <rdfs:comment>Фильм относится к жанру</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Role"/>
+        <rdfs:comment>Актер исполняет роль</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+        <rdfs:comment>Поджанр</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#roleInMovie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#roleInMovie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:comment>Роль относится к фильму</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#birthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#birthDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Дата рождения</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#characterName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#characterName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Имя персонажа</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Длительность в минутах</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#fullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#fullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Полное имя персоны</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Рейтинг</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#releaseYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#releaseYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Год выпуска</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Название фильма</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Studio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Christopher_Nolan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Christopher_Nolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Crime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Crime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Francis_Ford_Coppola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Francis_Ford_Coppola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Inception -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Inception">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Keanu_Reeves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Keanu_Reeves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Lana_Wachowski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Lana_Wachowski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Leonardo_DiCaprio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Leonardo_DiCaprio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Marlon_Brando -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Marlon_Brando">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Sci-Fi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Sci-Fi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#The_Godfather -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#The_Godfather">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#The_Matrix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#The_Matrix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nickanet/ontologies/2026/8/cinema-universe#Movie"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
